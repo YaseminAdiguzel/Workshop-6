@@ -1,0 +1,25 @@
+-Getter ve Setter'lar nedir, niçin kullanılır?-
+Getter ve Setter metotlar, kapsüllenmiş nesne özelliklerine erişmek için kullanılan metotlardır. Bu metotlar sayesinde nesne özellikleri üzerinde işlemler gerçekleştirilebilir.. Dilimizdeki karşılıkları: get: almak, set: vermek anlamındadır.
+Getter Method : Nesnenin sahip olduğu herhangi bir değişkene erişmek için kullanılan metottur. (Erişmek derken, nesnenin özelliğine değer ataması için kullanılmaz. Var olan bir özelliği almak için kullanılır.) Return Type bulunur, yani metot int,String, ArrayList gibi bir değer döndürür. Bu sayede nesne özelliğine erişilmiş olur.Kullanımı:
+public returnType getObjectAttribute(){return objectAttribute}
+Setter Method : Nesnenin sahip olduğu herhangi bir özelliğine erişmek için kullanılan metottur. (Erişmek derken, nesnenin sahip olduğu özelliğe değer ataması yapılmak için kullanılır. Zaten var olan bir özelliği değiştirmek de mümkündür.) Return Type bulundurmaz yani metot, “void” olarak tanımlanır. Kullanımı :
+public void setObjectAttribute(Type attribute){this.ObjectAttribute = attribute}
+
+-Encapsulation nedir" araştırınız. Getter ile Setter ile ilişkisini açıklayınız.-
+Encapsulation, nesnelerin sahip olduğu özellik ve davranışların gizlenmesidir. Türkçe karşılıklarına baktığımızda Sarmalama, Kapsülleme gibi anlamlara gelir. Bu işlem “private” ve “protected” anahtarları ile gerçekleştirilir.
+Nesne özelliklerini “private” olarak tanımladığımızda başka sınıflar içerisinden bu özelliklere erişimleri kısıtlamış olduk. Elbette bu durum asla nesne özelliklerine erişemeyeceğimiz anlamına gelmiyor. Tıpkı arabaya binmek için ihtiyaç duyulan anahtar veya telefonu açmak için girilmesi gereken şifre gibi biz de bir aracı yardımı ile bu özelliklere erişebiliriz. Bu noktada Getter ve Setter Metotlar yardımımıza koşuyor.
+
+-Route Param, Query Param" nedir, niçin kullanılır ?-
+"Route params" ve "Query params", belirli bir REST API kaynağına işaret eden bir URL'ye farklı şekillerde eklenmiş istek parametreleridir. "Route params" url'den bir `/` ve "Query params" ise bir soru işareti ('?`) yardımı ile ayrılır.
+"Route params" kaynak konumunu, "Query params" ise sıralama, sayfalandırma veya filtreleme işlemlerini tanımlar.
+Kullanıcının girişi (sorgu) "Query params"'da bir değişken olarak geçirilirken, istemci bir API çağrısı yaptığında her "route param"'ın gerçek bir değerle değiştirilmesi gerekir. "route params" süslü parantezleri içinde bulunur.
+"Query params" nasıl bakılacağını açıklarken, "Route params" programınıza nereye bakacağınızı gösterir. "Route params", bitiş noktası URI'nın bir parçasıdır ve bir değere sahip olması gerekir. "Route params", bitiş noktası URL'deki dosya sistemi olarak düşünün ve isteği aradığı cevaba yönlendirin.
+
+-JS'de "Arrow Function'lar nelerdir, özellikleri nelerdir?-
+Arrow Function, ES6 ile sunulan özelliklerden biridir. Arrow Function özelliğinin temel amacı JavaScript'te kullanılan fonksiyon tanımlama yöntemini kısaltmak ve prartik bir kullanım sağlamaktır. 
+Arrow fonksiyonlar, normal fonksiyonlar gibi içerisine parametreler alabilir ve bu değerleri return anahtar kelimesiyle döndürebilir.Normal fonksiyonlarda fonksiyon parametre almasa dahi ( ) işaretlerini kullanmak zorundayız fakat arrow fonksiyonlarda  tek bir parametremiz varsa ( ) kullanmamıza gerek kalmıyor. Fonksiyon parametre almıyorsa ( ) yerine _ kullanabiliyoruz. İki veya ikiden fazla parametre var ise mecbur ( ) kullanmak zorundayız.
+Normal fonksiyonlardan farklı olarak arrow fonksiyonlarda return anahtar kelimesi kullanılmadan da geriye değer döndürülebilir. Bunun için kodun yalnızca bir satırdan oluşması ve süslü parantez içine alınmaması gerekir. Eğer birden fazla satır varsa kod, süslü parantez içerisine alınmalı ve return anahtar kelimesi kullanılmalıdır.
+Arrow fonksiyonu normal fonksiyondan ayıran en önemli özelliklerden biri fonksiyonun içerisinde arguments nesnesine ulaşama imkanı vermemesidir. arguments dizi benzeri bir nesnedir ve fonksiyona geçilen argümanlara fonksiyonun içerisinde ulaşma imkanı sağlar.
+Normal fonksiyonlarda iç içe fonksiyon yazabildiğimiz gibi arrow fonksiyonlarda da bunu yapabiliyoruz.
+Arrow fonksiyonlar, function anahtar kelimesi kullanmadıkları için constructor olarak kullanılamazlar.
+
